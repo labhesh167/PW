@@ -1,0 +1,26 @@
+1. What is a Computer?
+-->A computer is a machine that accepts information and processes it in accordance with a programme, piece of software,or set of instructions that specify how the information be handled.
+
+2.What is RAM?
+-->RAM is a Random Access Memory which is volatile.This means that informaton is kept in RAM while the computer is running, but it is erased when the machine is powered off. The operating system and other files are frequently loaded from an HDD or SSD into RAM when the computer is restarted.
+
+3.Where is data stored in a computer?
+-->Data is stored as files – the computer equivalent of files stored in a filing cabinet. Files are stored in folders and folders are stored within drives.
+
+4.What is that input device used to type text and numbers on a document in the computer system?
+-->The keyboard is an input device that allows you to enter letters, numbers and symbols into your computer.
+
+5.What are the output Devices?
+-->The output is what we get back from the command we gave the computer through the inputt devices.The monitor is the device that is utilised the most since commands are entered via the keyboard,and the outcome is shown on the monitor after processing.
+
+6.Which is the input device that allows a user to move the cursor or a pointer on the screen?
+-->The mouse is the inout device which allows the user to move the cursor or a pointer on the screen.
+
+7.Which language is directly understood by the computer withoout a translation program?
+-->Machine language is the language understood by a computer. It is very difficult to understand, but it is the only thing that the computer can work with.
+
+8.What are input devices?
+-->Through input units or devices like a keyboard, joystick, etc., computers can receive commands in the 
+form of numbers, alphabets, graphics, etc. and respond accordingly. The responses are then output in a 
+language that humans understand or that we have programmed the computer with. These inputs are then 
+analysed and transformed to computer language.
