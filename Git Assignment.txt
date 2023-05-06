@@ -1,0 +1,24 @@
+1.What is Git?
+-->Git is a version control system used for tracking changes in computer files. It is generally used for source code management in software development. Git is used to tracking changes in the source code.
+
+2.What do you understand by the term 'Version Control System'?
+-->Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
+
+3.What is GitHub?
+-->GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
+
+4.Mention some popular Git Hosting Services?
+-->GitLab,GitHub,SourceForge,AWS Wlastic Beanstalk,Codebase,Assembla are some of Git Hosting services. From this GitHub is most popular Git Hosting service.
+
+5.Different types of version control system?
+-->There are two types of version control: centralized and distributed.
+
+6.What benefits come with using GIT?
+-->One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. Feature branches provide an isolated environment for every change to your codebase.
+
+7.What is Git repository?
+-->Git Repository allows performing various operations on it to create different versions of a project.repository tracks all changes made to files in your project, building a history over time.
+
+8.how can you initialize a repository in Git?
+-->Initializing a new repository: git init
+To create a new repo, you'll use the git init command. git init is a one-time command you use during the initial setup of a new repo. Executing this command will create a new .git subdirectory in your current working directory. This will also create a new main branch.
