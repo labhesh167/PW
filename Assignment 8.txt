@@ -1,0 +1,119 @@
+1)What are the conditional operators in Java?
+-->In Java, conditional operators are used to make decisions based on certain conditions. They allow you to create conditional expressions that evaluate to either true or false. These operators are often used in conditional statements, such as if statements and loops, to control the flow of the program based on different conditions. The conditional operators in Java are as follows:
+
+Equality Operator (==): The equality operator checks if two operands have equal values. If the values are equal, the expression evaluates to true; otherwise, it evaluates to false.
+
+Inequality Operator (!=): The inequality operator checks if two operands have different values. If the values are different, the expression evaluates to true; otherwise, it evaluates to false.
+
+Greater Than Operator (>): The greater than operator checks if the value on the left is greater than the value on the right. If the condition is true, the expression evaluates to true; otherwise, it evaluates to false.
+
+Less Than Operator (<): The less than operator checks if the value on the left is less than the value on the right. If the condition is true, the expression evaluates to true; otherwise, it evaluates to false.
+
+Greater Than or Equal To Operator (>=): The greater than or equal to operator checks if the value on the left is greater than or equal to the value on the right. If the condition is true, the expression evaluates to true; otherwise, it evaluates to false.
+
+Less Than or Equal To Operator (<=): The less than or equal to operator checks if the value on the left is less than or equal to the value on the right. If the condition is true, the expression evaluates to true; otherwise, it evaluates to false.
+
+2)What are the typees of operators based on number of operands?
+-->Based on the number of operands they operate on, operators in programming languages can be categorized into three main types:
+
+Unary Operators:
+Unary operators work on a single operand. They perform various operations like negation, increment, decrement, logical NOT, etc. Unary operators are often used to modify the value of a single variable. In most programming languages, the unary operators are represented using a single symbol. Examples of unary operators include:
+Unary minus (-): Negates the value of the operand.
+Unary plus (+): Represents the positive value of the operand (though it doesn't change the value).
+Increment (++): Increases the value of the operand by 1.
+Decrement (--): Decreases the value of the operand by 1.
+Logical NOT (!): Performs logical negation, converting true to false and false to true.
+
+
+Based on the number of operands they operate on, operators in programming languages can be categorized into three main types:
+
+1)Unary Operators:
+Unary operators work on a single operand. They perform various operations like negation, increment, decrement, logical NOT, etc. Unary operators are often used to modify the value of a single variable. In most programming languages, the unary operators are represented using a single symbol. Examples of unary operators include:
+Unary minus (-): Negates the value of the operand.
+Unary plus (+): Represents the positive value of the operand (though it doesn't change the value).
+Increment (++): Increases the value of the operand by 1.
+Decrement (--): Decreases the value of the operand by 1.
+Logical NOT (!): Performs logical negation, converting true to false and false to true.
+Examples of using unary operators:
+
+2)Binary Operators:
+Binary operators work on two operands. They are the most common type of operators and perform operations like addition, subtraction, multiplication, division, and logical operations between two values. Binary operators are represented using symbols between two operands. Examples of binary operators include:
+Addition (+): Adds two values together.
+Subtraction (-): Subtracts the second value from the first.
+Multiplication (*): Multiplies two values.
+Division (/): Divides the first value by the second.
+Modulus (%): Calculates the remainder after division.
+
+Ternary Operator:
+The ternary operator is unique because it works on three operands. It is a shorthand way of writing a simple if-else statement. The ternary operator returns one of two values based on the evaluation of a condition. It is represented using the ? : syntax.
+
+3)What is the use of Switch case in java programming?
+-->The switch statement in Java is a control flow statement that allows you to select one of many code blocks to be executed based on the value of an expression. It provides a more concise and readable alternative to using multiple if-else statements when you have several cases to handle.
+
+4)What are the priority levels of arithmetic operations in java?
+-->In Java, arithmetic operations have different priority levels, meaning that some operations are performed before others. The priority levels of arithmetic operations in Java are as follows, from highest to lowest:
+
+Parentheses:
+Expressions enclosed in parentheses () are evaluated first. Anything within parentheses is calculated before any other operation outside of them.
+
+Unary Operators:
+Unary operators, such as unary minus (-) and unary plus (+), have the next highest priority. They are applied to a single operand.
+
+Multiplicative Operators:
+The multiplicative operators have the next priority level. These operators are used for multiplication (*), division (/), and modulus (%) operations.
+
+Additive Operators:
+The additive operators have a lower priority than the multiplicative operators. These operators are used for addition (+) and subtraction (-) operations.
+
+Assignment Operators:
+Assignment operators, such as =, +=, -=, *=, /=, and %= have the lowest priority among the arithmetic operations. They are used for assigning values to variables.
+
+When multiple operators are present in an expression, Java follows the priority levels to evaluate the expression. If there are operators with the same priority, Java uses the left-to-right order of evaluation. This means that the expression is evaluated from left to right, performing operations in order of priority.
+
+5)What re the conditional statements and use of conditional statements in java?
+-->
+i)if-else Statement:
+The if-else statement is used when you have two possible outcomes based on a condition. If the condition specified in the if block evaluates to true, the code inside the if block is executed. Otherwise, if the condition is false, the code inside the else block (if present) is executed.
+
+ii)if-else if-else Statement (Multiple Conditional Branches):
+The if-else if-else statement allows you to handle multiple possible outcomes based on different conditions. It is used when you have multiple conditions, and you want to execute specific code blocks based on those conditions. The code inside the if block associated with the first true condition will be executed. If none of the conditions is true, the code inside the else block (if present) will be executed.
+
+iii)Switch Statement:
+The switch statement is used when you want to test a single variable or expression against multiple values and execute different blocks of code based on those values. It's an alternative to using multiple if-else if-else statements when you have a limited set of discrete values to check.
+
+6)What is the syntax of if else statement?
+-->if (condition) {
+statement - 1
+} else {
+statement - 2
+}
+
+7)What are the three types of iterative statements in java?
+-->In Java, there are three types of iterative (looping) statements that allow you to execute a block of code repeatedly based on a certain condition. These iterative statements are used to perform repetitive tasks efficiently:
+
+i)for Loop:
+The for loop is a versatile and commonly used iterative statement in Java. It allows you to specify an initialization, a condition, and an increment (or decrement) expression in a single line. The loop will continue executing as long as the condition is true. The for loop is suitable when you know the exact number of iterations needed.
+
+ii)while Loop:
+The while loop is another looping statement in Java. It repeats a block of code as long as the specified condition is true. Unlike the for loop, the while loop requires you to handle the initialization and increment (or decrement) of the loop variable explicitly before and after the loop.
+
+iii)do-while Loop:
+The do-while loop is similar to the while loop but with a slight difference. It first executes the code block and then checks the condition. This means the code inside the loop will always execute at least once, regardless of whether the condition is true or false.
+
+8)what are Difference between for loop and do while loop?
+--> the for loop is generally used when the number of iterations is known beforehand, and it performs the condition check before executing the loop body. In contrast, the do-while loop is useful when you want to ensure that the loop body is executed at least once, and the condition check occurs after executing the loop body.
+
+9)Write a program to print numbers from 1 to 10?
+-->
+	class Forloop1 
+   	 {
+  	  public static void main(String[] args)
+ 	   {
+     	   int n = 11;
+	
+     	   for (int i=0; i<n; i++)
+     	   {
+    	        System.out.println(i);
+     	   }
+   	 }
+	}
