@@ -1,0 +1,258 @@
+1)Write a program to print A,B,C,D,E,F,G,H, using pattern programming logic?
+-->public class Complexpattern 
+{
+        public static void main(String[] args)
+        {
+            int n = 8; 
+            int i, j;
+            for (i = n; i>=1; i--)
+            {
+                for (j = 1; j < i; j++) 
+                {
+                    System.out.print(" ");
+                }
+                for (j = i; j <= n; j++) {
+                    if (j == i || j == n || i == n / 2 + 1) 
+                    {
+                        System.out.print("*");
+                    } else
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++)
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == 1 || i == n / 2 + 1 || i == n) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == 1 || i == n) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == n || i == 1) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == 1 || i == n || i == n / 2 + 1) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == 1 || i == n / 2 + 1) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || i == 1 || i == n || (i == n / 2 + 1 && j > n / 2 + 1) || (i > n / 2 + 1 && j == n)) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+    
+            
+            for (i = 1; i <= n; i++) 
+            {
+                for (j = 1; j <= n; j++) 
+                {
+                    if (j == 1 || j == n || i == n / 2 + 1) 
+                    {
+                        System.out.print("*");
+                    } else 
+                    {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    
+}
+
+2)Write a program to print triangle using star pattern programming logic
+-->
+public class Trianglepattern 
+{
+    public static void main(String[] args)
+    {
+        int rows = 5; 
+
+        for (int i = 1; i <= rows; i++) 
+        {
+            for (int j = rows - i; j >= 1; j--)
+            {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) 
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+3)Write a program to print **************
+                           ****** *******
+	                   *****   ******
+                           ****     *****
+			   ***       ****
+			   **         ***
+			   *           **
+			   *            *
+			   *            *             
+                           *            *
+			   *		*
+			   * 		*
+			   *  		*
+			   **************	  
+
+
+-->Code:-
+	public class Assignment8
+	{
+   	 public static void main (String[] args)
+   	 {
+      	  int n=14;
+
+       	 for(int i=0; i<n; i++)
+       	 {
+        	    for(int j=0; j<n; j++)
+         	   {
+          	      if(i==0 && j<=(n-1)/2 || j==0 && i<=(n-1)/2 || i+j<=(n-1)/2 || i==0 && j>=(n-1)/2 || j==n-1 && i<=n-1 || j-i>=(n-1)/2 || j==0 && i>=(n-1)/2 || i==n-1 && j<=n-1 || j+i<=(n-1)/2)
+          	      {
+          	          System.out.print("*");
+            	      }
+            	      else
+             	      {
+             	       System.out.print(" ");       
+             	      }
+          	  }
+          	  System.out.println(" ");
+      	  }
+   	 }
+	}
+
+     
+4)Write a program to print PW SKILLS using pattern programming logic.
+-->Code:
+	public class Assignment8
+	{
+    	   public static void main(String[] args)
+           {
+        	 char[] pwSkills = {'P', 'W', ' ', 'S', 'K', 'I', 'L', 'L', 'S'};
+   
+          	 for (int i = 0; i < pwSkills.length; i++)
+		 {
+            	 for (int j = 0; j <= i; j++)
+		 {
+               	  System.out.print(pwSkills[j] + " ");
+               	 }
+               	 System.out.println();
+           	 }
+        
+        	
+         }
+      }
+ 
+
+5)Write a program to print your Full Name using Pattern programming logic.
+-->Code:
+	public class Assignment8
+	{
+     		public static void main(String[] args)
+        	{
+         	char[] pwSkills = {'L', 'a', 'b', 'h', 'e', 's', 'h', ' ', 'D' , 'u' , 'r' , 'g' , 'a' , 'd' , 'a' , 's' , ' ' , 'C' , 'h' , 'a' , 'u' , 'd' , 'h' , 'a' , 'r' , 'i'};
+    
+            
+          	 for (int i = 0; i < pwSkills.length; i++) {
+           	  for (int j = 0; j <= i; j++) {
+           	      System.out.print(pwSkills[j] + " ");
+           	     }
+           	     System.out.println();
+             }  
+       }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
