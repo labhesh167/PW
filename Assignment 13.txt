@@ -1,0 +1,53 @@
+1. What is String in Java?
+
+--> 1]String is a series or collection of characters which are enclosed within " ".
+	2]String refers to an object in java present in package called java.lang.String 
+	3]String objects is by default immutable which means once the object is created we cannot change the value of the object.
+
+2. Types of string in java are?
+
+--> There are 2 types of strings:
+	1] Mutable String:
+		If an operation is performed on already created string and if those changes get reflected in the same string then the string is mutable string.
+		Example: StringBuffer,StringBuilder.
+		
+	2]Immutable String:
+		If an operation is performed on already created string and if those changes won't get reflected on the same object rather a ne wobject is created then the string is called as immutable string.
+		Example:String
+		
+3. In how many ways can you create string object in java?
+
+-->1]String s =new String()
+			Creates an Empty String Object
+
+   2]String s =new String(String literals)
+			Creates an Object with String literals on Heap
+
+   3]String s =new String(StringBuffer sb)
+			Creates an equivalent String object for StringBuffer
+
+   4]String s =new String(char[] ch)
+			Creates an equivalent String object for character array
+
+   5]String s =new String(byte[] b)
+			Creates an equivalent String object for byte array.
+			
+4. What is string constant pool?
+
+--> The string constant pool is a special memory area in the Java heap that stores string literals. It's designed to improve performance and memory efficiency when working with strings. 
+	Syntax:
+		String a = new String("Jarvis")
+	
+5. What do you mean by mutable and immutable objects?
+
+-->		1]Mutable: 
+				Can be changed after creation (like clay you can mold).
+
+		2]Immutable: 
+				Can't be changed after creation, but you can create a new "version" with the changes (like baking clay into a fixed shape).
+		
+6. Where exactly is the string constant pool located in the memory?
+
+-->String constant pool:
+			lives in the heap (not some separate area), no fixed size, managed by the JVM for efficiency.
+			Think of it as a special part of the heap just for string literals.
