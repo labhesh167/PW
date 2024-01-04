@@ -1,0 +1,166 @@
+1. Write a simple String program to take input from user?
+-->
+	Code:
+		public class simple
+		{
+			public static void main(String args[])
+			{
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter the String: ");
+			String s1 = sc.nextLine();
+			System.out.println("Entered string is: " +s1);
+
+			sc.close();
+
+			}
+		
+		}
+		
+	Output:
+			Enter the String: John
+			Entered string is: John
+			
+
+2. How do you concatenate two strings in Java? Give an example?
+-->	 
+	There are two approaches of concatenation of string:
+		1) using "+" operator
+		2) using string.concat() method
+		
+	Code:
+		public class simple
+		{
+			public static void main(String[] args) 
+			{
+            String str1 = "John";
+            String str2 = "doe";
+            String result = str1 + " " + str2;
+            System.out.println(result);
+    
+            String result1 = str1.concat(" ").concat(str2);
+            System.out.println(result1);
+			}
+		}
+	
+	Output:
+			John doe
+			John doe
+	
+	
+	
+3. How do you find the length of a string in Java Explain with an example.
+-->
+	we can find the length of the string by using the built in method "str.length".
+	
+	code:
+		public class Inbuiltmethods
+		{
+			public static void main(String args[])
+			{
+			String s1 = "John";
+			System.out.println(s1.length());
+			}
+    
+		}	
+		
+	Output:
+			4
+
+4. How do you compare two strings in java? Give an Example
+-->
+	There are two ways to compare the string:
+		1) == Operator: It compares the references of the object
+		
+		2) equals() Method: It compares the content of the two objects
+
+	Code:   
+		public static void main(String args[])
+			{
+			String s1 ="john";
+			String s2 = new String("John");
+			String s3 = new String("john");
+
+			System.out.println(s1==s2);          //operator used to compare refrences
+			System.out.println(s2==s3);         
+			System.out.println(s1==s3);
+
+			System.out.println(s1.equals(s2));      //method used to compare the exact string value
+			System.out.println(s1.equals(s3));
+			System.out.println(s2.equals(s3));
+			System.out.println(s2.equalsIgnoreCase(s3));   // case is ignored
+			}
+    
+	Output:
+			false
+			false
+			false
+			false
+			true
+			false
+			true
+			
+5. Write a program to find the length of the string "refrigerator".
+-->
+	Code:
+		public class Inbuiltmethods
+		{
+			public static void main(String args[])
+			{
+				String s1 = "Refrigerator";
+        
+				System.out.println(s1.length());
+        
+			}
+    
+		}
+	
+	Output:
+			12
+	
+6. Write a program to check if the letter 'e' is present in the word 'Umbrella'.
+-->
+		Code:
+		
+			public static void main(String[] args) 
+			{
+				String word = "Umbrella";
+    
+            
+				boolean x = word.toLowerCase().contains("e");
+    
+				if (x) 
+				{
+					System.out.println("The letter 'e' is present.");
+				} 
+				else
+				{
+					System.out.println("The letter 'e' is not present.");
+				}
+			}
+	
+		Output:
+				The letter 'e' is present.
+				
+
+7. Write a program to delete all consonants from the string "Hello,have a good day".
+--> 
+	Code:
+		public static void main(String[] args) 
+        {
+            String input = "Hello, have a good day";
+        
+            
+            String result = input.replaceAll("[^aeiouAEIOU\\s]", "");
+        
+            System.out.println(result);
+        }
+
+	Output:
+		eo ae a oo ae
+		
+						
+			          
+
+	
+			
+			
