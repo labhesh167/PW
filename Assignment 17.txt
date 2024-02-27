@@ -1,0 +1,114 @@
+1.What is Mutable String in Java Explain with an Example.
+--> After creating a string on that string if we try to perform any operation and if those changes get reflected in the same object then such strings are called Mutuble Strings.StringBuilder is a part of the java.lang package and provides a mutable sequence of characters. It allows you to modify the contents of the string without creating a new object every time, which can be more efficient in certain scenarios where frequent string manipulations are required.
+	
+	Example:
+	
+	public class simple 
+	{
+        public static void main(String[] args) 
+        {
+		StringBuilder mutableString = new StringBuilder("Hello");
+
+        mutableString.append(" World!");
+
+        System.out.println("Mutable String: " + mutableString);
+        mutableString.insert(5, " Java");
+
+        System.out.println("Modified Mutable String: " + mutableString);
+
+        mutableString.delete(5, 10);
+
+        System.out.println("After Deletion: " + mutableString);
+        mutableString.setCharAt(0, 'h');
+
+        System.out.println("After Updating: " + mutableString);
+    }
+
+}
+
+Output:
+		Mutable String: Hello World!
+		Modified Mutable String: Hello Java World!
+		After Deletion: Hello World!
+		After Updating: hello World!
+		
+		
+2.WAP to Reverse a String
+-->
+	Code:
+		public class simple 
+		{
+		public static void main(String args[])
+		{
+		String a = "PWSKILLS";
+		String b="";
+
+		for(int i=a.length()-1;i >= 0;i--)
+		{
+			b=b+a.charAt(i);
+		}
+		System.out.println("Input is :"  +a);
+		System.out.println("Output is :" +b);
+		}
+		}
+		
+	Output:
+		Input is :PWSKILLS
+		Output is :SLLIKSWP
+		
+3.WAP to reverse a sentence while preserving the position.
+-->
+	Code:
+		public class simple
+		{
+		public static void main(String args[])
+		{
+        String a = "Think Twice";
+        String b = " ";
+        String sarr[] = a.split(" ");
+
+        for(String elem: sarr)
+        {
+            for( int i = elem.length()-1 ; i>=0 ; i--)
+            {
+                b = b + elem.charAt(i);
+            }
+            b = b + " ";
+            {
+             System.out.println(b);
+            }
+           
+        }
+		}
+		}
+	
+	Output:
+		knihT 
+		knihT eciwT
+		
+4.WAP to sort a String Alphabetically.
+-->
+	Code:
+		import java.util.Arrays;
+		public class simple
+		{
+		public static void main(String[] args) 
+		{
+        String a = "pwskills";
+
+        char[] charArray = a.toCharArray();
+        Arrays.sort(charArray);
+        String sb = new String(charArray);
+        System.out.println("Original String: " + a);
+        System.out.println("Sorted String: " + sb);
+		}
+		}
+	
+	Output:
+		Original String: pwskills
+		Sorted String: ikllpssw
+
+
+       
+       
+	
