@@ -1,0 +1,296 @@
+1.What do you mean by Multithreading ? Why is it important?
+-->
+	Multithreading is a programming concept where a single process can have multiple threads of execution running concurrently. Each thread represents an independent path of execution within the same program, allowing different parts of the program to run simultaneously.
+Here's why multithreading is important:
+
+	1.Improved Performance:
+
+		Utilizes multi-core processors effectively by running tasks in parallel.
+		Can significantly speed up program execution for CPU-intensive tasks.
+
+
+	2.Responsiveness:
+
+		Keeps the user interface responsive while performing background tasks.
+		Prevents long-running operations from blocking the entire application.
+
+
+	3.Resource Sharing:
+
+		Allows efficient sharing of resources within a single process.
+		Threads can share memory and other resources more easily than separate processes.
+
+
+	4.Concurrent Operations: Enables handling multiple operations simultaneously, like serving multiple clients in a server application.
+
+
+	5.Simplified Program Structure:
+		Complex tasks can be broken down into simpler, concurrent subtasks.
+		Can lead to more modular and manageable code.
+
+	6.Efficient I/O Operations:
+		One thread can wait for I/O operations while others continue processing.
+		Improves overall system efficiency, especially in I/O-bound applications.
+
+	7.Better Resource Utilization: Makes efficient use of system resources by keeping the CPU busy even when some threads are waiting.
+
+
+	8.Real-time Systems: Critical for applications requiring real-time processing and quick response times.
+
+
+	9.Scalability: Easier to scale applications to handle increased load by adding more threads.
+
+
+	10.Asynchronous Programming: Facilitates asynchronous programming models, improving application responsiveness.
+
+	However, multithreading also introduces challenges:
+
+	Increased complexity in program design and debugging.
+	Potential for race conditions and deadlocks if not properly managed.
+	Overhead in creating and managing threads.
+	
+2.What are the benefits of using Multithreading?
+-->
+	The benefits of using multithreading are numerous and significant. Here are the key advantages:
+
+	1.Improved Performance:
+			Utilizes multiple CPU cores efficiently, allowing parallel execution of tasks.
+			Can significantly speed up overall program execution, especially for CPU-intensive operations.
+
+
+    2.Enhanced Responsiveness:
+			Keeps user interfaces responsive while performing background tasks.
+			Prevents long-running operations from freezing the application.
+
+
+	3.Efficient Resource Utilization:
+			Makes better use of system resources by keeping the CPU busy even when some threads are waiting.
+			Allows for more efficient I/O operations, as one thread can wait for I/O while others continue processing.
+
+
+	4.Concurrent Operations:
+			Enables handling of multiple tasks or operations simultaneously.
+			Particularly useful in server applications serving multiple clients concurrently.
+
+	5.Simplified Program Structure:
+			Complex tasks can be broken down into simpler, concurrent subtasks.
+			Can lead to more modular and manageable code in some cases.
+
+	6.Resource Sharing:
+			Threads within the same process can easily share memory and resources.
+			More efficient than inter-process communication for shared tasks.
+
+	7.Scalability:
+			Easier to scale applications to handle increased load by adding more threads.
+			Adapts well to multi-core and distributed computing environments.
+
+	8.Real-time Systems:
+			Essential for applications requiring real-time processing and quick response times.
+			Allows for prioritization of critical tasks.
+
+	9.Asynchronous Programming Model:
+			Facilitates asynchronous operations, improving overall system responsiveness.
+			Useful for handling events and callbacks efficiently.
+
+	10.Better I/O Handling:
+			One thread can perform I/O operations while others continue processing, reducing idle time.
+
+	11.Reduced Latency:
+			Can decrease system latency in scenarios where multiple independent tasks need to be performed.
+
+	12.Improved Fault Isolation:	
+			In some designs, a failure in one thread doesn't necessarily affect others, improving system robustness.
+
+
+	While these benefits are significant, it's important to note that multithreading also introduces complexities like synchronization issues, potential deadlocks, and increased difficulty in debugging. Proper design and careful implementation are crucial to fully leverage the advantages of multithreading while minimizing its challenges.
+
+3.What is Thread in Java?
+-->
+	In Java, a thread is the smallest unit of execution within a program. It represents an independent path of execution, allowing multiple operations to run concurrently within a single program. Here are the key points about threads in Java:
+	
+	1.Definition:
+		A thread is a lightweight subprocess, a separate path of execution within a program.
+		Each thread has its own call stack but can access shared data within a process.
+
+	2.java.lang.Thread Class:
+		Java provides the Thread class to create and control threads.
+		It's part of the java.lang package, so it's automatically imported.
+
+	3.Runnable Interface:
+		Threads can also be created by implementing the Runnable interface.
+		This is often preferred as it allows for better separation of task code from thread management.
+
+	4.Thread Lifecycle:
+		New: Thread is created but not started.
+		Runnable: Thread is ready to run and waiting for CPU time.
+		Running: Thread is currently executing.
+		Blocked/Waiting: Thread is temporarily inactive (e.g., waiting for I/O or synchronization).
+		Terminated: Thread has completed execution.
+
+	5.Thread Methods:
+		start(): Begins the execution of the thread.
+		run(): Contains the code that constitutes the thread's task.
+		sleep(): Pauses the thread for a specified time.
+		join(): Waits for the thread to complete.
+		interrupt(): Interrupts the thread.
+
+	6.Multithreading:
+		Java supports multithreading, allowing multiple threads to run concurrently.
+		The JVM and underlying OS manage the allocation of threads to CPU cores.
+
+	7.Synchronization:
+		Java provides synchronization mechanisms to handle concurrent access to shared resources.
+		Keywords like synchronized and tools like locks help in managing thread safety.
+
+	8.Thread Priority:
+		Threads can be assigned priorities to influence scheduling decisions.
+
+4.What are the two ways of implementing thread in java?
+-->
+	There are two main ways to implement threads in Java:
+	1.Extending the Thread class:
+		i)Create a class that extends java.lang.Thread
+		ii)Override the run() method to define the thread's behavior
+		iii)Create an instance of this class and call its start() method
+	
+	2.Implementing the Runnable interface:
+		i)Create a class that implements java.lang.Runnable
+		i)Implement the run() method to define the thread's behavior
+		iii)Create a Thread object, passing an instance of your Runnable class to its constructor
+		iv)Call the start() method on the Thread object.
+	
+	The Runnable interface approach is generally preferred because:
+		i) It doesn't require subclassing, allowing your class to extend another class if needed
+		ii) It separates the task code from the thread object, promoting better object-oriented design
+		iii) It's more flexible, as the same Runnable can be passed to multiple Thread objects
+
+5.What's the difference between thread and process?
+-->
+	Threads and processes are both units of execution in an operating system, but they have several key differences:
+
+	1.Definition:
+		Process: An independent program in execution, with its own memory space.
+		Thread: A lightweight unit of execution within a process, sharing the process's resources.
+
+	2.Memory:
+		Process: Has its own memory space and resources.
+		Thread: Shares memory and resources of its parent process with other threads.
+
+	3.Creation and Management:
+		Process: More expensive to create and manage.
+		Thread: Lighter weight, faster to create and destroy.
+	
+	4.Communication:
+		Process: Inter-process communication is more complex and slower.
+		Thread: Can easily communicate through shared memory within the same process.
+
+	5.Isolation:
+		Process: Highly isolated from other processes.	
+		Thread: Less isolated, can directly affect other threads in the same process.
+
+	6.Resource Allocation:
+		Process: Allocated separate memory and resources by the OS.
+		Thread: Shares resources allocated to its parent process.
+
+	7.Context Switching:
+		Process: Context switching between processes is more expensive.
+		Thread: Context switching between threads of the same process is faster.
+
+	8.Stability:
+		Process: A crash in one process doesn't directly affect others.
+		Thread: A crash in one thread can potentially crash the entire process.
+
+	9.Control:
+		Process: Controlled by the operating system.
+		Thread: Managed by the process and the threading library.
+
+    10.Address Space:
+		Process: Has its own address space.
+		Thread: Shares the address space of the process.
+
+	11.Security:
+		Process: Generally more secure due to isolation.
+		Thread: Can be less secure as they share resources within a process.
+
+	12.Scalability:
+		Process: Better for separate, independent tasks.
+		Thread: Better for parallel tasks within the same application.
+	
+	Here's a simple analogy:
+		A process is like a house with its own resources (kitchen, bathroom, etc.).
+		Threads are like people living in that house, sharing those resources.
+
+	In programming contexts:
+		Processes are suitable for running entirely separate programs.
+		Threads are ideal for concurrent operations within a single program, like handling multiple clients in a server application or performing background tasks in a GUI application.
+
+6.How can we create daemon threads?
+-->
+	In Java, a daemon thread is a background thread that is designed to support other threads within the application. Daemon threads are typically used for tasks that should run in the background and do not prevent the JVM from exiting when all user threads (non-daemon threads) have finished execution. Examples of daemon threads include garbage collection and other background housekeeping tasks.
+
+	Steps to Create a Daemon Thread:
+		1.Create a thread (or Runnable) as usual.
+		2.Call the setDaemon(true) method on the thread object before starting it.
+		3.Start the thread using the start() method.
+		
+	Example:
+		public class DaemonThreadExample 
+		{
+    public static void main(String[] args) 
+	{
+        // Create a Runnable task
+        Runnable task = new Runnable()
+		{
+            @Override
+            public void run() 
+			{
+                try 
+				{
+                    while (true) 
+					{
+                        System.out.println("Daemon thread is running...");
+                        Thread.sleep(1000); // Sleep for 1 second
+                    }
+                } catch (InterruptedException e)
+				{
+                    System.out.println("Daemon thread interrupted");
+                }
+            }
+        };
+
+        // Create a thread with the Runnable task
+        Thread daemonThread = new Thread(task);
+
+        // Set the thread as a daemon thread
+        daemonThread.setDaemon(true);
+
+        // Start the daemon thread
+        daemonThread.start();
+
+        // Main thread sleeps for 3 seconds
+        try 
+		{
+            Thread.sleep(3000);
+        } catch (InterruptedException e) 
+		{
+            e.printStackTrace();
+        }
+
+        // Main thread ends, and the JVM will exit since the only remaining thread is a daemon
+        System.out.println("Main thread ending, JVM will exit if only daemon threads remain");
+    }
+	}
+	
+7. What are the wait() and sleep() methods?
+-->
+	Context:
+		wait(): Used within synchronized blocks/methods for inter-thread communication.
+		sleep(): Used to pause the execution of the current thread for a specified time.
+
+	Lock Handling:
+		wait(): Releases the lock on the object.
+		sleep(): Does not release any locks held by the thread.
+
+	Notification:
+		wait(): Requires notify() or notifyAll() to wake up the waiting thread.
+		sleep(): Automatically wakes up after the specified sleep duration.
