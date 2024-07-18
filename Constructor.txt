@@ -1,0 +1,29 @@
+1.What is a Constructor?
+-->A constructor in Java is a special method that is called when an object is instantiated, initializing the new object. It has the same name as the class and does not have a return type.
+
+2.What is a Constructor Chaining?
+-->Constructor chaining refers to the practice of calling one constructor from another constructor in the same class or from a subclass constructor using this() or super(), respectively. It helps in reusing the code and initializing the object in multiple ways.
+
+3.Can we call a subclass constructor from a superclass constructor?
+-->No, in Java, a subclass constructor cannot be called directly from a superclass constructor. However, the superclass constructor can be called from the subclass constructor using super().
+
+4.What happens if you keep a return type for a constructor?
+-->If you specify a return type for a constructor, it becomes a regular method, not a constructor. This can lead to a compile-time error if you try to instantiate the class using it as a constructor.
+
+5.What is a No-argument constructor?
+-->A no-argument constructor is a constructor that does not take any parameters. It is often used to create an object with default values.
+
+6.How is a No-argument constructor different from the default Constructor?
+-->A no-argument constructor is explicitly defined by the programmer, while a default constructor is automatically provided by the compiler if no constructors are defined in the class. Both initialize objects with default values, but the no-argument constructor can be customized.
+
+7.When do we need Constructor Overloading?
+-->Constructor overloading is used when we need multiple ways to initialize an object with different sets of parameters. It allows the creation of objects with different initial values based on the parameters passed.
+
+8.What is Default constructor Explain with an Example
+-->A default constructor is a no-argument constructor provided automatically by the Java compiler if no other constructors are defined. For example, in a class Person, the default constructor Person() {} is provided if no constructors are explicitly defined.
+
+
+
+
+
+
